@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+.env
+*.zip
+*.img
+*.afdesign
+dist/
+build/
+.idea/
+.vscode/
+vendor/
+

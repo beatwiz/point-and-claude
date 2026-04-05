@@ -1,0 +1,46 @@
+#pac-highlight {
+  position: absolute;
+  pointer-events: none;
+  border: 1px solid #333;
+  border-radius: 0;
+  z-index: 2147483646;
+  background: rgba(0, 0, 0, 0.02);
+  box-sizing: border-box;
+  display: none;
+}
+
+#pac-label {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2147483647;
+  background: #fff;
+  color: #333;
+  font: 10px/1.2 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  padding: 1px 4px;
+  border: 1px solid #333;
+  border-radius: 0;
+  white-space: nowrap;
+  max-width: 340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: none;
+}
+
+#pac-toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2147483647;
+  background: #333;
+  color: #fff;
+  font: 11px/1.4 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  padding: 6px 14px;
+  border-radius: 0;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+#pac-toast.pac-visible {
+  opacity: 1;
+}

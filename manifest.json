@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Point & Claude",
+  "version": "1.0.0",
+  "description": "Point-and-click element selector optimized for Claude Code. Select any element to copy its LLM-friendly selector and context.",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Point & Claude \u2014 Toggle element selector"
+  }
+}
