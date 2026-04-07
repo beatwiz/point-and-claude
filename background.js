@@ -56,6 +56,6 @@ async function toggleTab(tabId) {
 }
 
 function updateBadge(tabId, isActive) {
-  chrome.action.setBadgeText({ text: isActive ? 'ON' : '', tabId });
-  chrome.action.setBadgeBackgroundColor({ color: '#333333', tabId });
+  chrome.action.setBadgeText({ text: isActive ? 'ON' : '', tabId }).catch(() => {});
+  chrome.action.setBadgeBackgroundColor({ color: '#333333', tabId }).catch(() => {});
 }
