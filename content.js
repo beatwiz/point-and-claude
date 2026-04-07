@@ -118,6 +118,8 @@
     const info = buildElementInfo(currentTarget);
     copyToClipboard(info);
     showToast('Copied to clipboard');
+    hideHighlight();
+    currentTarget = null;
   }
 
   function onKeyDown(e) {
