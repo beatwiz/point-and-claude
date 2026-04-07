@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Point & Claude",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Point-and-click element selector optimized for Claude Code. Select any element to copy its LLM-friendly selector and context.",
   "permissions": [
     "activeTab",
